@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@300;400&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    }
+
+html, body {
+    height: 100%;
+}
+
+body {
+        background-color: #fffef1;
+        line-height: 1.7;
+    }
+
+
+
+.cabeza {
+        display: flex;
+        justify-content: space-between;
+        
+        }
+
+.banner {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        }
+
+
+
+
+h2, h3, h4, p, li, cite, q, figcaption, label, input, textarea {
+                                                                font-family: Montserrat, sans-serif;
+                                                                color: #333333;
+                                                                }
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    color: #7765b8;
+    font-size: 2em;
+    }
+
+h2 {
+    font-size: 1.25em;
+    color: #333333;
+    text-align: center;
+    
+    }
+
+h3 {
+    text-align: center;
+}
+
+p { 
+    font-size: 1em;
+    font-weight: 300;
+    
+    }
+
+q {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: lighter;
+    }
+
+cite, figcaption {
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-align: center;
+                    
+                }
+
+.destacado {
+            font-size: 1.4em;
+            text-align: center;
+            }
+
+a {
+    text-decoration: none;
+    color: #7765b8;
+    }
+
+a:active {
+        color: #fffef1;
+        }
+
+a:hover {
+        color: #7765b8;
+        }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+.contenedor {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            margin: 1rem ;
+            }
+
+.seccion {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+.caja {
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            }
+
+.imagen  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lista {
+            padding: 2rem;
+            position: fixed;   
+            height: 100vh;
+            width: 100%;
+            display: none;    
+            transition: .2s ease-in-out;
+            text-align: center;
+            color: #7765b8;
+            }
+
+#lista:target {
+                    display: inline;    
+                    top: 0;
+                    transition: .5s ease-in;
+                    background-color: #fffef1;
+                    width: 100%;
+                    align-content:center;
+                    }
+
+
+.cerrar {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        line-height: 1.8rem;
+        text-align: center;
+        margin-left: auto;
+        font-size: 1.25rem;
+        border: .1rem solid;
+        border-radius: 50%;
+        color: #333333;
+        background-color: #fffef1;
+        }
+
+.boton {
+        border: 0.2rem solid #7765b8; 
+        padding: 0.5rem;
+        margin: 1rem; 
+        background-color:#7765b8;  
+        color: #fffef1; 
+        text-decoration: none;
+        text-align: center;
+        width: auto;
+        height: auto;
+        border-radius: 1rem; 
+        }
+
+input, textarea {
+                border-color: #7765b8;
+                border-radius: 0.3rem;
+                background-color: white;
+                }
+
+.video-contenedor iframe, .mapa-contenedor iframe {
+top: 0;
+left: 0;
+width: 100%
+}
+
+.creditos {
+    width: 50%;
+}
+
+#coloreado {
+    background-color: #E7DAD2 ;
+    border-radius: 2rem;
+    
+}
+
+
+/** estilo para tablet**/
+@media (min-width:768px) {
+    .contenedor {
+        max-width: 834px;
+        
+    }
+    
+
+    
+    
+    #profes, #testimonios, #cursos {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-flow: wrap;
+        
+
+    }
+
+    .caja {
+        
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 50%
+    }
+
+    #contacto, #pie, #presentacion {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        flex-flow: wrap;
+    
+    }
+    
+}
+
+/** estilo para escritorio**/
+@media (min-width:992px) {
+    .contenedor {
+                max-width: 1440px;
+                
+                }
+
+    
+    
+                #profes, #testimonios, #cursos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-around;
+                    flex-flow: wrap;
+                    
+                }
+            
+                #contacto, #pie, #presentacion {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:space-around;
+                
+                }
+            
+    .caja {
+        padding-left: 1rem ;
+        padding-right: 1rem;
+    }
+
+            
+
+    
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    
+
+    .caja {
+        width: 25%;
+        }
+
+    
+
+
+    
+    
+}
+
+.profe-modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #fffef1;
+    top: 0;
+    left: 0;
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+[id*="profe-modal-"]:target{
+    display: flex;
+}
+
+#profe1 a{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+
+
